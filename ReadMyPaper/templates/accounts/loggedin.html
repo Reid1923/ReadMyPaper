@@ -1,8 +1,140 @@
+ <!DOCTYPE html>
+<!-- Template by html.am
+	This is the template that wull be used for the pages on this website -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Welcome!</title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+				color:white;
+				background:#3C1919;
+			}
+			
+			#header {
+				background: #ccc;
+				background: url("http://prod.assets.thebanner.s3.amazonaws.com/styles/article-large/s3/article/large/TunedIn_BooksfromtheBanner_large.jpg?itok=0LSzrmRo") repeat;
+				height: 100px;
+				color:white;
+			}
+			
+			#header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+			
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 230px;
+				margin-left: -100%;
+				background: #000000;
+				color:white;
+			}
+			
+			#footer {
+				clear: left;
+				width: 100%;
+				background: #000000;
+				text-align: center;
+				opacity: 0.7;
+				padding: 4px 0;
+				color: white;
+			}
+	
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+			.innertube {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #A39395;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				
+			}
+			
+			nav ul a {
+				color: #926103;
+				text-decoration: none;
+			}
+			
+			bantam {
+			float:right;
+			
+			
+			}
+			
+		
+		</style>
+	
+	</head>
+	
+	<body>		
 
-
-{% block content %}
-
-	<h2>Hi! You are now logged in!</h2>
-	<p>Click <a href="/accounts/logout/">here</a> to logout.</p>
-
-{% endblock %}
+		<header id="header">
+			<div class="innertube">
+				<h1>Read My Paper Homepage</h1>
+				<bantam><h4><font color="white">Welcome, User!</h4>
+				</bantam>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>My Homepage</h2>
+						
+						<!--Big thanks to lunapic.com for generating the transparency-->
+					</div>
+					<h3>MORE TEXT</h3>
+					<p>some sample text</p>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>My Account</h3>
+					<p>Some details about the user, so they have easy access to their information.</p>
+					<ul><li><p>Click <a href="/accounts/logout/">here</a> to logout.</p></li>
+					
+					<h3>Other Important Links</h3>
+					
+						<li><a href="#">Read My Paper use policy</a></li>
+						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
+						
+					</ul>
+						<p>Copyright 2015, Read My Paper Group.</p>
+				</div>
+			</nav>
+		
+		</div>
+	</body>
+</html>
