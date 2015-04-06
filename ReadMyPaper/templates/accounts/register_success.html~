@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Registration Form</title>
+		<title>Registration Successful!</title>
 		<style type="text/css">
 		
 			body {
@@ -99,7 +99,7 @@
 
 		<header id="header">
 			<div class="innertube">
-				<h1>Read My Paper Registration Form</h1>
+			<h1>Read My Paper Registration Successful!</h1>
 			</div>
 		</header>
 		
@@ -114,16 +114,8 @@
 					<!--FUNCTIONALITY -->
 					{% block content %}
 
-						<h2>Register Here</h2>
-						<p>Use your Trinity College email address as your username.</p>
-						<p>You may only register for this website if you have a "@trincoll.edu" email address. All other accounts will be rejected.</p>
-						<p>Before finishing your registration, you must agree to the terms of service below.</p>
-						<form action="/accounts/register/" method="post"> {% csrf_token %}
-						{{form}}
-
-						<input type="submit" value="Register" />
-
-						</form>
+						<h2>Registration complete! Congratulations!</h2>
+						<p>Click <a href="/accounts/login/">here</a> to login.</p>
 
 					{% endblock %}
 					
@@ -134,3 +126,12 @@
 		</div>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+<!-- -->

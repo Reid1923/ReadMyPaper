@@ -1,6 +1,137 @@
-{% block content %}
+ <!DOCTYPE html>
+<!-- Template by html.am
+	This is the template that wull be used for the pages on this website -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Registration Successful!</title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+				color:white;
+				background:#3C1919;
+			}
+			
+			#header {
+				background: #ccc;
+				background: url("http://prod.assets.thebanner.s3.amazonaws.com/styles/article-large/s3/article/large/TunedIn_BooksfromtheBanner_large.jpg?itok=0LSzrmRo") repeat;
+				height: 100px;
+				color:white;
+			}
+			
+			#header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+			
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 230px;
+				margin-left: -100%;
+				background: #000000;
+				color:white;
+			}
+			
+			#footer {
+				clear: left;
+				width: 100%;
+				background: #000000;
+				text-align: center;
+				opacity: 0.7;
+				padding: 4px 0;
+				color: white;
+			}
+	
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+			.innertube {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #A39395;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				
+			}
+			
+			nav ul a {
+				color: #926103;
+				text-decoration: none;
+			}
+			
+			bantam {
+			float:right;
+			padding-left: 1em;
+			
+			}
+		
+		</style>
+		
+		
+	</head>
+	
+	<body>		
 
-	<h2>You have registered!</h2>
-	<p>Click <a href="/accounts/login/">here</a> to login.</p>
+		<header id="header">
+			<div class="innertube">
+			<h1>Read My Paper Registration Successful!</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2></h2>
+						<!--Big thanks to lunapic.com for generating the transparency-->
+					</div>
+					<!--FUNCTIONALITY -->
+					{% block content %}
 
-{% endblock %}
+						<h2>Registration complete! Congratulations!</h2>
+						<p>Click <a href="/accounts/login/"><font color="#926103" text-decoration="none">here</font></a> to login.</p>
+
+					{% endblock %}
+					
+					<!-- -->
+				</div>
+			</main>
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- -->
