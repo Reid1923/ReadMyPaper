@@ -16,4 +16,7 @@ urlpatterns = patterns('',
  	url(r'^accounts/logout/$' , 'ReadMyPaper.views.logout') , 
  	url(r'^accounts/loggedin/$' , 'ReadMyPaper.views.loggedin') ,
  	url(r'^accounts/invalid/$' , 'ReadMyPaper.views.invalid_login') ,
+ 	url(r'^accounts/register/$' , 'ReadMyPaper.views.register_user') ,
+ 	url(r'^accounts/register_success/$' , 'ReadMyPaper.views.register_success') ,
+
  )
