@@ -34,8 +34,13 @@ def register_user(request):
 	if request.method == 'POST':
 		form = UserCreationForm(request.POST)
 		if form.is_valid():
-			form.save()
-			return HttpResponseRedirect('/accounts/register_success')
+			userValid = request.POST.get('username' , '')
+			if userValid.endswith("@trincoll.edu"):
+				form.save()
+				return HttpResponseRedirect('/accounts/register_success')
+			else:
+				return HttpResponseRedirect('/accounts/invalid')
+
 
 	args = {}
 	args.update(csrf(request))
