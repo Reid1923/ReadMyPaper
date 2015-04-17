@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.contrib import auth
 from django.core.context_processors import csrf
 from django.contrib.auth.forms import UserCreationForm
+from forms import MyUserCreationForm
 
 def login(request):
 	c = {}
@@ -32,20 +33,15 @@ def logout(request):
 
 def register_user(request):
 	if request.method == 'POST':
-		form = UserCreationForm(request.POST)
+		form = MyUserCreationForm(request.POST)
 		if form.is_valid():
-			userValid = request.POST.get('username' , '')
-			if userValid.endswith("@trincoll.edu"):
-				form.save()
-				return HttpResponseRedirect('/accounts/register_success')
-			else:
-				return HttpResponseRedirect('/accounts/invalid')
-
+			form.save()
+			return HttpResponseRedirect('/accounts/register_success')
 
 	args = {}
 	args.update(csrf(request))
-	args['form'] = UserCreationForm()
-
+	args['form'] = MyUserCreationForm() 
+	
 	#May be for debugging
 	print args
 
@@ -54,9 +50,5 @@ def register_user(request):
 def register_success(request):
 	return render_to_response('register_success.html')
 
-
-
-
-
-
-
+def termsofuse(request):
+	return render_to_response('termsofuse.html')

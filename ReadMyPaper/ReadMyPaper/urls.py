@@ -1,6 +1,10 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
+from django.conf import settings
+from django.conf.urls.static import static
+from django.views.generic import RedirectView
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'ReadMyPaper.views.home', name='home'),
@@ -18,5 +22,8 @@ urlpatterns = patterns('',
  	url(r'^accounts/invalid/$' , 'ReadMyPaper.views.invalid_login') ,
  	url(r'^accounts/register/$' , 'ReadMyPaper.views.register_user') ,
  	url(r'^accounts/register_success/$' , 'ReadMyPaper.views.register_success') ,
+ 	url(r'^accounts/termsofuse/$', 'ReadMyPaper.views.termsofuse'),
+ 	
+ 	(r'^myapp/', include('ReadMyPaper.myapp.urls')),
 
- )
+ ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

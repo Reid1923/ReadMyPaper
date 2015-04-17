@@ -1,0 +1,88 @@
+EUROPEAN DEBT CRISIS
+
+Euro
+	Problems
+		- No control of interest Rates
+			- problem for Ireland because of higher inflation
+		- Fixed Exchange Rates & strong currency
+			- Alright when you're a strong central member of eurozone
+			- Issue when you're a peripheral member
+				- Can't make themselves competitive by devaluing currency
+					- Became a big issue with Greece
+				- Subject to growth goals & deficit/debt limits
+					- How did Greece get around deficit/debt?
+						- Lie about the state of Gov't books
+						- New regime came in and stopped lying
+						- Got good deals on debt because they're in euro zone
+
+	Benefits
+		- Open Access to European Market
+		- More Secure/SafeDebt
+			- Lower cost to Finance Debt
+			- Yield spread between German(safe) and Greek(risky) Bonds dropped a lot when Greece was admitted to Euro
+		- Stable Currency with Fixed ExRate within the Eurozone
+		- Subsidies
+
+US Financial Crisis
+	- Countries bailout banks
+	- countries run stimulus packages
+	- leads to deficits and debt
+	- Greec starts to have issues servicing debt due to increased interest rates
+	- spread between german & greek bonds increases
+	- Flight to safety as people look to get safer money
+		- US is safe so people flocked to buy US Bonds
+		- Greece wasn't safe so people didn't buy Greek Bonds
+	- Credit Rating agencies begin cutting Greek ratings
+	- Cost to finance Greek debt continues to increase
+
+Austerity Measures
+	- Increase taxes and/or decrease gov't spending
+	- This causes issues
+		- Politically unpopular
+		- Keynesian Economics --> Negative AD Shock
+		- These issues caused riots, protests, etc
+	- Greece starts gettings loans/bailouts
+		- IMF, ECB, and EC form TROICA
+		- Austerity measures are a string attached
+
+Back to Greece
+	- Eventually Greek bonds reach "Junk" status around 2010
+	- Greece revisits its estimates for 2009 budget in 2010
+		- Originally was a 12.7% deficit
+		- then austerity measures
+		- deficit increased to 13.6%
+		- Thought it may even be revised further up
+	- Greece cuts the face value of its debt
+		- causes some banking issues
+		- Cyprus needs a bailout (highly exposed to greek debt)
+	- Greece has deep seeded structural issues in its economy
+		- Welfare state
+		- Issues with budgets
+			- Ex. 
+				- Greek National Railroad Company had employee salaries 4x that of ticket sales
+				- Greek retirement age is 58
+				- Greek pension was ~96% of final 5 years of earnings
+				- Government pensions
+				- Greeks don't pay taxes
+				- Bribery is very popular in Greece
+					- Doctors and Tax collectors are two most highly bribed professions
+
+Ireland
+	- Booming before joining Eurozone
+	- Struggled with inability to set interest rates once they joined the eurozone
+		- They had higher inflation than the rest of europe
+	- They were booming but Europe was running low interest rates so boom increased
+	- Capital flowed in very quickly
+	- Suffered from speculation after Greece meltdown
+	- Between 2000 and 2008 inflation averaged ~10%
+		- Higher than rest of Europe
+
+- optimally the currency area would have business cycle synchronization
+- Optimal Currency areas can be smaller than a country
+	- US is probably not an optimal currency
+		- i.e. CT vs TX
+- EU wants itself to be an optimal currency area
+	- if so it would be self inforcing
+	- No one would benefit from leaving
+	- doesn't really work perfectly
+		- illustrated by periphery countries

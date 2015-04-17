@@ -1,0 +1,124 @@
+GREAT RECESSION
+
+Bear Sterns 
+	- Bought by JP Morgan Chase
+	- Heavy loans from Fed (~$30B)
+		- strange because Fed doesn't regulate Bear Sterns (SEC does)
+		- collateral used by JPMC was Bear Sterns assets
+		- created panic
+
+Lehman Brothers
+	- Failed
+	- Was gonna be bought by Barclays bought deal fell through
+		- rest of financial sector would have needed to soak up a lot of toxic assets
+	- Barclays would have been forced to guarantee all Lehman assets by Monday
+		- Ran into issues with British legal code
+		- couldn't get a shareholder vote so they needed a waiver from UK SEC
+			- Waived DENIED ==> Lehman fails
+
+WAMU
+	- Failed
+	- sold to JP Morgan Chase ($1.9B)
+		- some goes to stock holders, mostly debt holders
+		- not nearly made full on the deal
+		- Debt holders and stock holders wiped out
+	- Under FDIC
+
+Wachovia
+	- Under FDIC
+	- Fail
+	- Judged systematically important
+		- Protect debt holders
+		- auction held for assets 
+		- Citigroup and Wells Fargo bid
+			- Citigroup awarded the right to buy Wachovia since their bid was "better"
+			- Citigroup bid cost less for FDIC
+			- Citigroup bid was complex and took awhile to take hold
+		- Later a tax law changes
+			- Wells Fargo comes back with a better bid
+			- Essentailly Wells Fargo was offering to outright buy Wachovia
+			- This wasn't exactly legal (lawsuit settled out of court for ~$1B)
+
+AIG
+	-Failed
+		- Credit Default Swaps (CDSs)
+			- insurance contracts for any assets, even if you don't own it
+	- Bailed out because they were systemically important insurance company
+	- Insurance side of business was still profitable
+	- Investment side not so much
+	- Insurance is still done at the state level in US (strange)
+		- subsidiaries all have nice capital cushions
+		- umbrella company however can't just take out that money for other reasons
+
+Money Markets (MM Mutual Funds)
+	- Liquidity Problems
+		- $1 a share for many years
+		- considering the need to devalue
+		- they have no federal guarantee though
+	- Not allowed to borrow money
+		- Treasury used it exchange stabilization fund to 
+	  	  provide "FDIC Type" insurance to those who wanted it
+	  	  	- Did NOT lose money
+	  	  	- Now illegal (wasn't then)
+
+Europe
+	- NOTE: Not common in US but elsewhere in world 
+	  many people make deposits/loans in foreign currency
+	- Liquidity problems in dollars
+		- Central Bank Liquidity Swap
+			- i.e. Fed will take your Euros for dollars
+				- enter into a future repurchase agreement with fixed exchange rate
+				- fed assumes no exchange rate risk
+			- Fed, ECB, Canda, Japan have permanent standing billateral agreements of this type
+
+Fannie & Freddie
+	- Government Sponsored Organizations (GSOs)
+	- Buy mortgages from banks so banks have cash to lend out for more mortgages
+		- Many people took this to mean the gov't guarantees their debt
+			- Not necessarily true but ended up happening with bailout
+	- Gov't started it then spins it off to be owned by stockholders
+	- F&F were borrowing short term on commercial paper market
+		- Commercial paper = uncollaterallized IOUs
+		- People assumed these IOUs were backed by gov't
+		- led to really low interest rates being given to them
+		- made mortgage loans at higher rates
+		- made money on the difference
+	- Housing market dips so they stop getting great interest rates
+	- Short term debt and long term assets means constant debt rollover
+	- This lead to a problem when they ran out of liquidity
+	- Put into full conservatorship by government
+
+------------------------------------------------------------------------------------
+DODD FRANK ACT
+
+Creates Financial Stability OVersight Council
+	- Charied by Secretary of the Treasury
+	- Voting Members:
+		- Heads of
+			- Treasury
+			- Fed
+			- OCC
+			- SEC
+			- CFTC
+			- FDIC
+			- FHFA
+			- NCUA
+			- Bureau of Consumer Financial Protection
+			- 1 Independent Insurance Expert
+	- Fed doesn't have to follow recommendations 
+		- if they don't they should explain why in writing
+Change in regulatory powers
+- Fed increased regulatory power
+- Thrift supervision office eliminated
+- Regulate thrift holding companies
+- SEC requires registration of all swap participlants and advisors
+
+Securitization
+	- Credit Risk Retention
+		- 5% of risk must be held by securitizer
+			- Can be lowered if originator holds some of risk
+		- Exemptions for prime mortgages
+	- You can now look at individual loans going into each security
+
+Volker Rule
+	- Banks cannot engage in proprierary trading

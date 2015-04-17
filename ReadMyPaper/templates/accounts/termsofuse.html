@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Registration Form</title>
+		<title>Read My Paper Terms of Use</title>
 		<style type="text/css">
 		
 			body {
@@ -71,10 +71,6 @@
 			p {
 				color: #A39395;
 			}
-			
-			termsText {
-				color: #A39395;
-			}
 	
 			nav ul {
 				list-style-type: none;
@@ -93,24 +89,17 @@
 			padding-left: 1em;
 			
 			}
-			
-			termsBox {
-			word-wrap: break-word;         /* All browsers since IE 5.5+ */
-    		overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
-    		width: 100%;
-    		padding: 20px 0px 20px 45px;
-    		}
 		
 		</style>
 		
-		
+	
 	</head>
 	
 	<body>		
 
 		<header id="header">
 			<div class="innertube">
-				<h1>Read My Paper Registration Form</h1>
+				<h1>Read My Paper</h1>
 			</div>
 		</header>
 		
@@ -119,24 +108,14 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2></h2>
+						<h2>Terms of Use</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<!--FUNCTIONALITY -->
-					{% block content %}
+					<h3>Any person seeking to register must agree to the following terms of service:</h3>
+					<p>
+					Read My Paper is an online tool for Students of Trinity College to use for peer edits of academic papers. The intention of the application is to not only provide a service to students, but also provide them with an accessible opportunity to improve their writing skills.
 
-						<h2>Register Here</h2>
-						<p>Use your Trinity College email address as your username.</p>
-						<p>You may only register for this website if you have a "@trincoll.edu" email address. All other accounts will be rejected.</p>
-						<p>Before finishing your registration, you must agree to the terms of service below:</p>
-						
-						<div style="overflow: auto; width:500px; height:200px; background-color: black">
-							Terms of Use for Read My Paper
-							<termsBox>
-							<p>
-							Read My Paper is an online tool for Students of Trinity College to use for peer edits of academic papers. The intention of the application is to not only provide a service to students, but also provide them with an accessible opportunity to improve their writing skills.
-
-							Since the papers submitted to be edited via this application are primarily papers for academic classes, all submitters and editors must comply with the Academic Honesty policies from their professor as well as indicated in the <a href=“http://www.trincoll.edu/sitecollectiondocuments/studenthandbook.pdf"> student handbook. </a> This means that all edits and submitted material must be your own work. The responsibility to catch plagiarism errors fall on the original submitter, not on the editor nor the creators of Read My Paper; however, editors are welcome to and are encouraged to point these errors out should they see one.
+							Since the papers submitted to be edited via this application are primarily papers for academic classes, all submitters and editors must comply with the Academic Honesty policies from their professor as well as indicated in the <a href=“http://www.trincoll.edu/sitecollectiondocuments/studenthandbook.pdf"> <li>student handbook.</li> </a> This means that all edits and submitted material must be your own work. The responsibility to catch plagiarism errors fall on the original submitter, not on the editor nor the creators of Read My Paper; however, editors are welcome to and are encouraged to point these errors out should they see one.
 
 
 							Users are also welcome to submit papers for scholarship applications, cover letters, etc. so long as they do not contain unoriginal work or are not cited properly. 
@@ -145,35 +124,31 @@
 
 							Read My Paper is not responsible for any misuse of the website nor loss of data. All users are encouraged to create a copy of everything they upload to the application.
 
-							For more information on plagiarism and how to avoid it, click  <a href=“http://wps.prenhall.com/hss_understand_plagiarism_1/0,6622,427073-,00.html”>here.</a>
+							For more information on plagiarism and how to avoid it, click  <a href=“http://wps.prenhall.com/hss_understand_plagiarism_1/0,6622,427073-,00.html”><li>here.</li></a>
 
 							The application only works if everyone cooperates by these rules. 
-							
-							</p>
-							</termsBox>
-							Copyright Read My Paper Group, 2015.
-							
-							
-						</div> 
-						<p>If you would like to see the terms of service on a full page, click <a href="/terms"><font color="#926103">here.</font></a></p>
-						
-						<form action="/accounts/register/" method="post"> {% csrf_token %}
-						{{form}}
-
-						<input type="submit" value="Register" />
-
-						</form>
-						
-
-					{% endblock %}
 					
-		
-
 					
-					<!-- -->
+					
+					</p>
 				</div>
 			</main>
 			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Important Links</h3>
+					
+					
+					
+					<ul>
+						<li><a href="/accounts/termsofuse/">Read My Paper use policy</a></li>
+						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
+						
+					</ul>
+						<p>Copyright 2015, Read My Paper Group.</p>
+				</div>
+			</nav>
+		
 		</div>
 	</body>
 </html>
