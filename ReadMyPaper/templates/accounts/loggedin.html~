@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Read My Paper: View Feedback</title>
+		<title>Welcome!</title>
 		<style type="text/css">
 		
 			body {
@@ -86,17 +86,12 @@
 			
 			bantam {
 			float:right;
-			padding-left: 1em;
+			
 			
 			}
 			
-			viewBox {
-				margin: 5px;
-				margin-left: 15px;
-			}
 		
 		</style>
-		
 	
 	</head>
 	
@@ -104,8 +99,6 @@
 
 		<header id="header">
 			<div class="innertube">
-			<bantam><h4><font color="white">Welcome, <form>{{request.user.username}}</form></h4>
-				</bantam>
 				<h1>Read My Paper</h1>
 			</div>
 		</header>
@@ -115,23 +108,13 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2>View Feedback</h2>
+						<h2>Your login was Successful!</h2>
+						
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<h3>Click the link to download your edits.</h3>
-					<p>Remember, be courteous and edit the papers of others!</p>
-					<!-- -->
-					<viewBox>
-					<h4>You have # papers waiting</h4>
-                     <p>put forms here</p>
-                     </viewBox>
-					
-					
-					
-					
-					
-					
-					<!-- -->
+					<h3>Welcome to your Read My Paper Account.</h3>
+					<p>Use the navigation bar on the left side to use the software. Remember, for each paper uploaded, you must edit another person's paper.</p>
+					<p>All uploads and downloads must comply the the Read My Paper use policy.</p>
 				</div>
 			</main>
 			
@@ -145,9 +128,9 @@
 					</ul>
 					<ul><li><p>Click <a href="/accounts/logout/">here</a> to logout.</p></li>
 					
-					<h4>Other Important Links</h4>
-					<ul>
-						<li><li><a href="/accounts/termsofuse/">Read My Paper use policy</a></li>
+					<h3>Other Important Links</h3>
+					
+						<li><a href="#">Read My Paper use policy</a></li>
 						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
 						
 					</ul>

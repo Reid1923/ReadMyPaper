@@ -34,7 +34,7 @@ def logout(request):
 def register_user(request):
 	if request.method == 'POST':
 		form = MyUserCreationForm(request.POST)
-		if form.is_valid():
+		if form.is_valid() and request.username.endswith("@trincoll.edu"):
 			form.save()
 			return HttpResponseRedirect('/accounts/register_success')
 
@@ -52,3 +52,10 @@ def register_success(request):
 
 def termsofuse(request):
 	return render_to_response('termsofuse.html')
+	
+	
+#method for getting the username
+def my_view(request):
+    username = None
+    if request.user.is_authenticated():
+        username = request.user.username

@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Read My Paper: View Feedback</title>
+		<title>Upload a Paper</title>
 		<style type="text/css">
 		
 			body {
@@ -89,11 +89,6 @@
 			padding-left: 1em;
 			
 			}
-			
-			viewBox {
-				margin: 5px;
-				margin-left: 15px;
-			}
 		
 		</style>
 		
@@ -115,16 +110,29 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2>View Feedback</h2>
+						<h2>Upload a Paper</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<h3>Click the link to download your edits.</h3>
-					<p>Remember, be courteous and edit the papers of others!</p>
+					<h3>Upload a paper you wish to be edited here </h3>
+					<p> Please remember to edit one paper for each submission. You may  view available papers HERE </p>
 					<!-- -->
-					<viewBox>
-					<h4>You have # papers waiting</h4>
-                     <p>put forms here</p>
-                     </viewBox>
+
+
+		<!-- Upload form. Note enctype attribute! -->
+		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<p>{{ form.non_field_errors }}</p>
+			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+			<p>
+				{{ form.docfile.errors }}
+				{{ form.docfile }}
+			</p>
+			<p><input type="submit" value="Upload" /></p>
+		</form>
+		
+
+
+</html> 
 					
 					
 					
@@ -143,7 +151,6 @@
 					<li><li><a href="/myapp/template/myapp">Upload a Paper</a></li>
 					<li>View Feedback</li>
 					</ul>
-					<ul><li><p>Click <a href="/accounts/logout/">here</a> to logout.</p></li>
 					
 					<h4>Other Important Links</h4>
 					<ul>
