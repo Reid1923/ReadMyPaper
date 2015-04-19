@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Upload a Paper</title>
+		<title>TEMPLATE FOR USER VIEW</title>
 		<style type="text/css">
 		
 			body {
@@ -99,7 +99,7 @@
 
 		<header id="header">
 			<div class="innertube">
-			<bantam><h4><font color="white">Welcome, <form>{{request.user.username}}</form></h4>
+			<bantam><h4><font color="white">Welcome, {{request.user.username}}</h4>
 				</bantam>
 				<h1>Read My Paper</h1>
 			</div>
@@ -110,29 +110,14 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2>Upload a Paper</h2>
+						<h2>USER VIEW</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<h3>Upload a paper you wish to be edited here </h3>
-					<p> Please remember to edit one paper for each submission. You may  view available papers HERE </p>
+					<h3>Do stuff</h3>
+					<p> do moar stuff </p>
 					<!-- -->
 
-
-		<!-- Upload form. Note enctype attribute! -->
-		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			<p>{{ form.non_field_errors }}</p>
-			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
-			<p>
-				{{ form.docfile.errors }}
-				{{ form.docfile }}
-			</p>
-			<p><input type="submit" value="Upload" /></p>
-		</form>
-		
-
-
-</html> 
+                     <p>put forms here</p>
 					
 					
 					

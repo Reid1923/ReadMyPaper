@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Upload a Paper</title>
+		<title>TITLE OF PAGE GOES HERE</title>
 		<style type="text/css">
 		
 			body {
@@ -92,6 +92,17 @@
 		
 		</style>
 		
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>	
 	
 	</head>
 	
@@ -99,9 +110,7 @@
 
 		<header id="header">
 			<div class="innertube">
-			<bantam><h4><font color="white">Welcome, <form>{{request.user.username}}</form></h4>
-				</bantam>
-				<h1>Read My Paper</h1>
+				<h1>PAGE NAME</h1>
 			</div>
 		</header>
 		
@@ -110,51 +119,22 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2>Upload a Paper</h2>
+						<h2>HEADER</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<h3>Upload a paper you wish to be edited here </h3>
-					<p> Please remember to edit one paper for each submission. You may  view available papers HERE </p>
-					<!-- -->
-
-
-		<!-- Upload form. Note enctype attribute! -->
-		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			<p>{{ form.non_field_errors }}</p>
-			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
-			<p>
-				{{ form.docfile.errors }}
-				{{ form.docfile }}
-			</p>
-			<p><input type="submit" value="Upload" /></p>
-		</form>
-		
-
-
-</html> 
-					
-					
-					
-					
-					
-					
-					<!-- -->
+					<h3>MORE TEXT</h3>
+					<p>some sample text</p>
 				</div>
 			</main>
 			
 			<nav id="nav">
 				<div class="innertube">
-					<h3>Options</h3>
-					<ul>
-					<li>View Available Papers</li>
-					<li><li><a href="/myapp/template/myapp">Upload a Paper</a></li>
-					<li>View Feedback</li>
-					</ul>
+					<h3>IMPORTANT STUFF</h3>
 					
-					<h4>Other Important Links</h4>
+					
+					<h3>Other Important Links</h3>
 					<ul>
-						<li><li><a href="/accounts/termsofuse/">Read My Paper use policy</a></li>
+						<li><a href="#">Read My Paper use policy</a></li>
 						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
 						
 					</ul>

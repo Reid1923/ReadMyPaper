@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+<!-- Template by html.am
+	This is the template that wull be used for the pages on this website -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Read My Paper Terms of Use</title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+				color:white;
+				background:#3C1919;
+			}
+			
+			#header {
+				background: #ccc;
+				background: url("http://prod.assets.thebanner.s3.amazonaws.com/styles/article-large/s3/article/large/TunedIn_BooksfromtheBanner_large.jpg?itok=0LSzrmRo") repeat;
+				height: 100px;
+				color:white;
+			}
+			
+			#header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+			
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 230px;
+				margin-left: -100%;
+				background: #000000;
+				color:white;
+			}
+			
+			#footer {
+				clear: left;
+				width: 100%;
+				background: #000000;
+				text-align: center;
+				opacity: 0.7;
+				padding: 4px 0;
+				color: white;
+			}
+	
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+			.innertube {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #A39395;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				
+			}
+			
+			nav ul a {
+				color: #926103;
+				text-decoration: none;
+			}
+			
+			bantam {
+			float:right;
+			padding-left: 1em;
+			
+			}
+		
+		</style>
+		
+	
+	</head>
+	
+	<body>		
+
+		<header id="header">
+			<div class="innertube">
+				<h1>Read My Paper</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>Terms of Use</h2>
+						<!--Big thanks to lunapic.com for generating the transparency-->
+					</div>
+					<h3>Any person seeking to register must agree to the following terms of service:</h3>
+					<p>
+					Read My Paper is an online tool for Students of Trinity College to use for peer edits of academic papers. The intention of the application is to not only provide a service to students, but also provide them with an accessible opportunity to improve their writing skills.
+
+							Since the papers submitted to be edited via this application are primarily papers for academic classes, all submitters and editors must comply with the Academic Honesty policies from their professor as well as indicated in the <a href=“http://www.trincoll.edu/sitecollectiondocuments/studenthandbook.pdf"> <font color="#926103" text-decoration="none">student handbook.</font></a> This means that all edits and submitted material must be your own work. The responsibility to catch plagiarism errors fall on the original submitter, not on the editor nor the creators of Read My Paper; however, editors are welcome to and are encouraged to point these errors out should they see one.
+
+
+							Users are also welcome to submit papers for scholarship applications, cover letters, etc. so long as they do not contain unoriginal work or are not cited properly. 
+
+							All users that submit academic papers are required to edit one paper for each submitted paper. These edits must be done to the best of the editors ability. Simply submitting a paper without any changes or poorly done edits could result in having the user’s account suspended from the website at the discretion of the administrators. 
+
+							Read My Paper is not responsible for any misuse of the website nor loss of data. All users are encouraged to create a copy of everything they upload to the application.
+
+							For more information on plagiarism and how to avoid it, click  <a href=“http://wps.prenhall.com/hss_understand_plagiarism_1/0,6622,427073-,00.html”><font color="#926103" text-decoration="none">here.</font></a>
+
+							The application only works if everyone cooperates by these rules. 
+					
+					
+					
+					</p>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Important Links</h3>
+					
+					
+					
+					<ul>
+						<li><a href="/termsofuse/">Read My Paper use policy</a></li>
+						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
+						
+					</ul>
+						<p>Copyright 2015, Read My Paper Group.</p>
+				</div>
+			</nav>
+		
+		</div>
+	</body>
+</html>
