@@ -151,6 +151,7 @@
 					<li><li><a href="/myapp/template/myapp">Upload a Paper</a></li>
 					<li>View Feedback</li>
 					</ul>
+					<ul><li><p>Click <a href="/accounts/logout/">here</a> to logout.</p></li>
 					
 					<h4>Other Important Links</h4>
 					<ul>
