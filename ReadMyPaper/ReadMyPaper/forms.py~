@@ -7,5 +7,10 @@ from django.contrib.auth.forms import UserCreationForm
 class MyUserCreationForm(UserCreationForm):
 	remember_me = forms.BooleanField(widget=forms.CheckboxInput(),
                                      required=True,
-                                     label='I agree to the Read My Paper terms of user.')
-
+                                     label='I agree to the Read My Paper terms of user.') 
+	def isChecked():
+		if remember_me = false
+			return false
+		else
+			return true
+    		

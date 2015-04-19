@@ -36,7 +36,8 @@ def register_user(request):
 		form = UserCreationForm(request.POST)
 		if form.is_valid():
 			userValid = request.POST.get('username' , '')
-			if userValid.endswith("@trincoll.edu"):
+			isChecked = request.POST.get('remember_me', False)
+			if userValid.endswith("@trincoll.edu") and isChecked:
 				form.save()
 				return HttpResponseRedirect('/accounts/register_success')
 			else:
