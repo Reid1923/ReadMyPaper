@@ -4,5 +4,5 @@ from views import DocumentList
 
 urlpatterns = patterns('ReadMyPaper.myapp.views',
     url(r'^list/$', 'list', name='list'),
-    url(r'^document_list/$', DocumentList.as_view()),
+    url(r'^listviewTEST/$', DocumentList.as_view()),
 )

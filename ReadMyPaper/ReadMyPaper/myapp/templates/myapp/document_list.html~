@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Upload a Paper</title>
+		<title>List of Papers to Edit</title>
 		<style type="text/css">
 		
 			body {
@@ -89,6 +89,25 @@
 			padding-left: 1em;
 			
 			}
+			
+			.list_item {
+			width: 600px;
+			background: #2B1212;
+			border: 5px #3C1919;
+			height: 200px;
+			
+			}
+			
+			prompt_box {
+			word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    		overflow-wrap: break-word;
+			}
+			
+			a {
+			color: #926103;
+			text-decoration: none;
+			}
+			
 		
 		</style>
 		
@@ -110,30 +129,31 @@
 			<main>
 				<div id="content">
 					<div class="innertube">
-						<h2>Upload a Paper</h2>
+						<h2>Please choose a paper to edit</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
-					<h3>Upload a paper you wish to be edited here </h3>
-					<p> Please remember to edit one paper for each submission. You may  view available papers HERE </p>
+					<h3>The following papers have requested edits. Please click the link to download the paper.</h3>
+					<p> Please remember to edit one paper for each submission. You may upload papers by selecting "Upload a Paper" from the "Options" column. </p>
 					<!-- -->
 
 
 		<!-- Upload form. Note enctype attribute! -->
-		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
-			{% csrf_token %}
-			<p>{{ form.non_field_errors }}</p>
-			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
-			<p>
-				{{ form.docfile.errors }}
-				{{ form.docfile }}
-			</p>
-			<p>Title: {{ form.titleField }}</p>
-			<p>Days until due date: {{ form.duedateField}}</p>
-			<p>Class Num: {{ form.classNumField }}</p>
-			<p>Prompt: {{ form.promptField}}</p>
-			<p>Email address: {{form.userNameField}}</p>
-			<p><input type="submit" value="Upload" /></p>
-		</form>
+		
+
+{% block content %}
+	<h2>Papers:</h2> 
+    <ul>
+        {% for Document in object_list %}
+        	<div class = "list_item">
+        	<p>Title: {{Document.titleField}}</p>
+        	<p>Days until due: {{Document.dueDateField}}</p>
+        	<p>Submitted by: {{Document.titleField}}</p>
+        	<p>Prompt: <prompt_box>{{Document.promptField}}</prompt_box></p>
+            <p><a href="{{Document.docfile.url}}">Click to Download</a></p>
+        </div>
+        {% endfor %}
+    </ul>
+{% endblock %}
 		
 
 

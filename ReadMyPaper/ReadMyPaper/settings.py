@@ -50,7 +50,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #'registration' ,
 
-    'ReadMyPaper.myapp'
+    'ReadMyPaper.myapp',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -19,7 +19,9 @@ class DocumentList(ListView):
 	model = Document
 
 #functions for uploading papers
-
+class uploadDoc(Document):
+	class meta:
+		fields = '__all__'
 #----------------------------------
 def list(request):
     # Handle file upload

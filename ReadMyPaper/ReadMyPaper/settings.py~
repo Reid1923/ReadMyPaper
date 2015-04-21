@@ -21,6 +21,7 @@ TEMPLATE_DIRS = (
 #processes so we can pull the username
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
 )
 
 
@@ -49,7 +50,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     #'registration' ,
 
-    'ReadMyPaper.myapp'
+    'ReadMyPaper.myapp',
+    'ReadMyPaper.listapp',
 )
 
 MIDDLEWARE_CLASSES = (

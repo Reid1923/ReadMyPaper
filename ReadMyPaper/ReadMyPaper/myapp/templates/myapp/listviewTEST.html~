@@ -128,10 +128,9 @@
 				{{ form.docfile }}
 			</p>
 			<p>Title: {{ form.titleField }}</p>
-			<p>Days until due date: {{ form.duedateField}}</p>
+			<p>Due Date: {{ form.dueDateField }}</p>
 			<p>Class Num: {{ form.classNumField }}</p>
-			<p>Prompt: {{ form.promptField}}</p>
-			<p>Email address: {{form.userNameField}}</p>
+			<p>Prompt: {{ form.promptField }}</p>
 			<p><input type="submit" value="Upload" /></p>
 		</form>
 		
