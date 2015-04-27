@@ -1,0 +1,12 @@
+ <!DOCTYPE html>
+<html>
+{% block content %}
+
+<ul>
+    {% for document in documents %}
+    <li><a href="{% url document document.id document.slug %}">{{ document.title }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+</html>

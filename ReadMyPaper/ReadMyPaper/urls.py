@@ -23,7 +23,9 @@ urlpatterns = patterns('',
  	url(r'^accounts/register/$' , 'ReadMyPaper.views.register_user') ,
  	url(r'^accounts/register_success/$' , 'ReadMyPaper.views.register_success') ,
  	url(r'^accounts/termsofuse/$', 'ReadMyPaper.views.termsofuse'),
- 	
- 	(r'^myapp/', include('ReadMyPaper.myapp.urls')),
+ 	url(r'^accounts/feedbackEmail/$', 'ReadMyPaper.feedbackEmail.views.send_email'),
+
+ 	(r'^myapp/', include('ReadMyPaper.myapp.urls'))
+
 
  ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

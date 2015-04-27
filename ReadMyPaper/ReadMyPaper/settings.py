@@ -51,6 +51,7 @@ INSTALLED_APPS = (
     #'registration' ,
 
     'ReadMyPaper.myapp',
+    'ReadMyPaper.feedbackEmail'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,3 +112,25 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(PROJECT_PATH, 'static')
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_TLS = True
+
+# Host for sending e-mail.
+EMAIL_HOST = 'smtp.gmail.com'
+
+# Optional SMTP authentication information for EMAIL_HOST.
+EMAIL_HOST_USER = 'noreplyreadmypaper@gmail.com'
+EMAIL_HOST_PASSWORD = 'andrewbudd'
+
+# Port for sending e-mail.
+EMAIL_PORT = 587
+
+
+
+
+
+
+
+
