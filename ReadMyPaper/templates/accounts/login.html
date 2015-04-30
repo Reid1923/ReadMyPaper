@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<!-- Template by html.am -->
+<!-- Template by html.am-->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -89,20 +89,15 @@
 			padding-left: 1em;
 			
 			}
+			
+			a {
+			color: #926103;
+			text-decoration: none;
+			}
 		
 		</style>
 		
-		<script type="text/javascript">
-			/* =============================
-			This script generates sample text for the body content. 
-			You can remove this script and any reference to it. 
-			 ============================= */
-			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
-			function generateText(sentenceCount){
-				for (var i=0; i<sentenceCount; i++)
-				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-			}
-		</script>	
+		
 	
 	</head>
 	
@@ -117,6 +112,7 @@
 		<div id="wrapper">
 		
 			<main>
+			<div style="margin-left:15px;margin-right:15px">
 				<div id="content">
 					<div class="innertube">
 						<h2>Read My Paper is a web application for peer editing</h2>
@@ -127,10 +123,11 @@
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
 					<h3>About This Website</h3>
-					<p>Read My Paper was developed by three Trinity College computer science students for CPSC340, Software Engineering.</p>
+					<p>Read My Paper was developed by four Trinity College computer science students for CPSC340, Software Engineering.</p>
 					<p>This website was developed using the Django framework for Python as the final project for the course.</p>
 					<p>This website was also developed using Agile methodologies.</p>
 					<p>Many thanks to all of our classmates for their continued support and to Professor Budd for his guidance. </p>
+				</div>
 				</div>
 			</main>
 			
@@ -155,7 +152,7 @@
 					{% endblock %}
 					
 					<!-- login form -->
-					<li>New User? Register <a href="/accounts/register/"><font color="#926103" text-decoration="none">here</font></a>!</li>
+					<li>New User? Register <a href="/accounts/register/">here</a>!</li>
 					
 					<h3>Other Important Links</h3>
 					<ul>

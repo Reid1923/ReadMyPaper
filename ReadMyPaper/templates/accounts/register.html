@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Template by html.am
 	This is the template that wull be used for the pages on this website -->
 <html>
@@ -100,6 +100,11 @@
     		width: 100%;
     		padding: 20px 0px 20px 45px;
     		}
+    		
+    		a {
+			color: #926103;
+			text-decoration: none;
+			}
 		
 		</style>
 		
@@ -117,6 +122,7 @@
 		<div id="wrapper">
 		
 			<main>
+			<div style="margin-left:15px;margin-right:15px">
 				<div id="content">
 					<div class="innertube">
 						<h2></h2>
@@ -133,10 +139,11 @@
 						<div style="overflow: auto; width:500px; height:200px; background-color: black">
 							Terms of Use for Read My Paper
 							<termsBox>
+							<div style="margin-left:15px;margin-right:15px">
 							<p>
 							Read My Paper is an online tool for Students of Trinity College to use for peer edits of academic papers. The intention of the application is to not only provide a service to students, but also provide them with an accessible opportunity to improve their writing skills.
 
-							Since the papers submitted to be edited via this application are primarily papers for academic classes, all submitters and editors must comply with the Academic Honesty policies from their professor as well as indicated in the <a href=“http://www.trincoll.edu/sitecollectiondocuments/studenthandbook.pdf"> student handbook. </a> This means that all edits and submitted material must be your own work. The responsibility to catch plagiarism errors fall on the original submitter, not on the editor nor the creators of Read My Paper; however, editors are welcome to and are encouraged to point these errors out should they see one.
+							Since the papers submitted to be edited via this application are primarily papers for academic classes, all submitters and editors must comply with the Academic Honesty policies from their professor as well as indicated in the student handbook. This means that all edits and submitted material must be your own work. The responsibility to catch plagiarism errors fall on the original submitter, not on the editor nor the creators of Read My Paper; however, editors are welcome to and are encouraged to point these errors out should they see one.
 
 
 							Users are also welcome to submit papers for scholarship applications, cover letters, etc. so long as they do not contain unoriginal work or are not cited properly. 
@@ -145,24 +152,31 @@
 
 							Read My Paper is not responsible for any misuse of the website nor loss of data. All users are encouraged to create a copy of everything they upload to the application.
 
-							For more information on plagiarism and how to avoid it, click  <a href=“http://wps.prenhall.com/hss_understand_plagiarism_1/0,6622,427073-,00.html”>here.</a>
 
 							The application only works if everyone cooperates by these rules. 
 							
 							</p>
+							</div>
 							</termsBox>
 							Copyright Read My Paper Group, 2015.
 							
 							
 						</div> 
-						<p>If you would like to see the terms of service on a full page, click <a href="/terms"><font color="#926103">here.</font></a></p>
+						<p>For more information on Academic Honesty, please visit the Trinity College website in the navigation pane.</p>
+						<p>If you would like to see the terms of service on a full page, click <a href="/accounts/termsofuse/">here.</a></p>
 						
+						<h3>Enter your details:</h3>
 						<form action="/accounts/register/" method="post"> {% csrf_token %}
 						{{form}}
 
 						<input type="submit" value="Register" />
 
 						</form>
+						
+						
+						<p>If you would like to go back to main page, click <a href="/accounts/login/">here.</a></p>
+						
+						
 						
 
 					{% endblock %}
@@ -172,7 +186,22 @@
 					
 					<!-- -->
 				</div>
+				</div>
 			</main>
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Important Links</h3>
+					
+					
+					
+					<ul>
+						<li><a href="/accounts/termsofuse/">Read My Paper use policy</a></li>
+						<li><a href="http://www.trincoll.edu/Pages/default.aspx">Trinity College Website</a></li>
+						
+					</ul>
+						<p>Copyright 2015, Read My Paper Group.</p>
+				</div>
+			</nav>
 			
 		</div>
 	</body>

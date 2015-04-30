@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Template by html.am
 	This is the template that wull be used for the pages on this website -->
 <html>
@@ -89,6 +89,11 @@
 			padding-left: 1em;
 			
 			}
+			
+			a {
+			color: #926103;
+			text-decoration: none;
+			}
 		
 		</style>
 		
@@ -99,7 +104,11 @@
 
 		<header id="header">
 			<div class="innertube">
-			<bantam><h4><font color="white">Welcome, <form>{{request.user.username}}</form></h4>
+			{% if user.is_authenticated %}
+				<bantam><h4><font color="white">Welcome, {{request.user.username}}!</h4>
+			{% else %}
+				<bantam><h4><font color="white">Welcome, guest!</h4>
+			{% endif %}
 				</bantam>
 				<h1>Read My Paper</h1>
 			</div>
@@ -108,32 +117,39 @@
 		<div id="wrapper">
 		
 			<main>
+			<div style="margin-left:15px;margin-right:15px">
 				<div id="content">
 					<div class="innertube">
 						<h2>Upload a Paper</h2>
 						<!--Big thanks to lunapic.com for generating the transparency-->
 					</div>
 					<h3>Upload a paper you wish to be edited here </h3>
-					<p> Please remember to edit one paper for each submission. You may  view available papers HERE </p>
+					<p>Please remember to be courteous and edit other user's papers.</p>
+					<p>Due date is in year-month-day format and 24 hour time. Please enter an accurate due date.</p> 
+					<p>Papers that are past their due date will be deleted from the website.</p>
 					<!-- -->
 
 
 		<!-- Upload form. Note enctype attribute! -->
+	{% if user.is_authenticated %}
 		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 			<p>{{ form.non_field_errors }}</p>
-			<p>{{ form.docfile.label_tag }} {{ form.docfile.help_text }}</p>
+			<p> {{ form.docfile.help_text }}</p>
 			<p>
 				{{ form.docfile.errors }}
 				{{ form.docfile }}
 			</p>
 			<p>Title: {{ form.titleField }}</p>
-			<p>Days until due date: {{ form.dueDateField}}</p>
-			<p>Class Num: {{ form.classNumField }}</p>
+			<p>Days Until Due: {{form.dueDateField}}</p>
 			<p>Prompt: {{ form.promptField}}</p>
 			<p>Email address: {{form.userNameField}}</p>
+			<p>Submit Time: {{form.submitTime}}</p>
 			<p><input type="submit" value="Upload" /></p>
 		</form>
+		{% else %}
+    <p>Oops! You can't use this website without being a member. Please go <a href="/accounts/login/">here</a> to register or login!</p>
+{% endif %}
 		
 
 
@@ -146,15 +162,16 @@
 					
 					<!-- -->
 				</div>
+				</div>
 			</main>
 			
 			<nav id="nav">
 				<div class="innertube">
 					<h3>Options</h3>
 					<ul>
-					<li>View Available Papers</li>
-					<li><li><a href="/myapp/list">Upload a Paper</a></li>
-					<li>View Feedback</li>
+					<li><a href="/myapp/document_list">View Available Papers</a></li>
+					<li><a href="/myapp/list">Upload a Paper</a></li>
+					<li><a href="/accounts/feedbackEmail/">Send Feedback</a></li>
 					</ul>
 					<ul><li><p>Click <a href="/accounts/logout/">here</a> to logout.</p></li>
 					
